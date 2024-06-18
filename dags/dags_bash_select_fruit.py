@@ -22,7 +22,7 @@ with DAG(
         bash_command="/opt/airflow/plugins/shell/select_fruit.sh AVOCADO",
     )
 
-    t0_grant_permission >> [t1_orange >> t2_avocado]
+    t0_grant_permission >> [t1_orange, t2_avocado]
 
 # 1st Ver
 # from airflow import DAG
